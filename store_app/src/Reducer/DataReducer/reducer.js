@@ -5,6 +5,7 @@ export const reducer = (state, action) => {
     case types.GET_DATA_REQUEST:
       return {
         ...state,
+        // allStoreData : payload,
         isLoading: true,
         isError: false,
       };
@@ -12,7 +13,7 @@ export const reducer = (state, action) => {
       return {
         ...state,
         isLoading: false,
-        storeData:payload,
+        storeData: payload,
         isError: false,
       };
     case types.GET_DATA_FAILURE:
@@ -21,6 +22,8 @@ export const reducer = (state, action) => {
         isLoading: false,
         isError: true,
       };
+
+    
     default:
       return state;
   }

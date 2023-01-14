@@ -9,7 +9,7 @@
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
-h2{
+h2 {
   margin: 0 5px;
 }
 .price h2 {
@@ -27,17 +27,24 @@ h2{
   margin-bottom: 0;
   /* border: 1px solid rgb(8, 7, 7); */
 }
-button {
+.addToCart {
   width: 60%;
   height: 40px;
   background-color: black;
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 15px;
 }
-
-button:hover{
-    background-color: rgb(51, 47, 47);
-    color: aliceblue;
+ h3{
+    margin-top: 5px;
+    font-weight: 500;
 }
+.addButton {
+  width: 60%;
+  padding: 0;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
 
+}

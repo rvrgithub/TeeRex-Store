@@ -5,3 +5,7 @@
     position: fixed;
     margin-top: 50px;
 } */
+.flex{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,12 +1,13 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 // import { getStoreData } from "../Reducer/action";
-import { reducer } from "../Reducer/reducer";
-import * as types from "../Reducer/action.type";
+import { reducer } from "../Reducer/DataReducer/reducer";
+import * as types from "../Reducer/DataReducer/action.type";
 
 const initialState = {
   isLoading: false,
   isError: false,
   storeData: [],
+  
 };
 const url =
   "https://geektrust.s3.ap-southeast-1.amazonaws.com/coding-problems/shopping-cart/catalogue.json";
@@ -26,12 +27,17 @@ const AppProvider = ({ children }) => {
         })
       );
   };
+
+
   useEffect(() => {
     getStoreData();
   }, []);
 
+// console.log("storeData",storeData)
   return (
-    <AppContext.Provider value={{ ...state }}>{children}</AppContext.Provider>
+    <AppContext.Provider value={{ ...state }}>
+      {children}
+    </AppContext.Provider>
   );
 };
 

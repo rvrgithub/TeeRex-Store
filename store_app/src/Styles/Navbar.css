@@ -7,6 +7,7 @@
   display: flex;
   color: rgb(63, 9, 113);
   justify-content: space-around;
+  z-index: 100px;
 }
 .logo {
   font-size: 30px;
@@ -35,7 +36,7 @@
   border-radius: 5px;
 }
 .cart {
-  font-size: 15px;
+  font-size: 12px;
   margin: -5px 2px;
 }
 

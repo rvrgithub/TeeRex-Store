@@ -6,8 +6,8 @@ import { ShopingCart } from "./ShopingCart";
 export const AllRoutes = () => {
   return (
     <Routes>
-      <Route to="/" element={<Products />} />
-      <Route to="shoping_cart" element={<ShopingCart />} />
+      <Route path="/" element={<Products />} />
+      <Route path="/shoping_cart" element={<ShopingCart />} />
     </Routes>
   );
 };

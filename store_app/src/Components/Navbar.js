@@ -7,10 +7,10 @@ export const Navbar = () => {
     <div className="nav_container">
       <div className="logo">TeeRex Store</div>
       <div className="pages">
-        <Link to="/" className="link">
+        <Link to="./" className="link">
           Porducts
         </Link>
-        <Link to="shoping_cart" className="link ">
+        <Link to="./shoping_cart" className="link ">
           {" "}
           <FaShoppingCart />
           <h1 className="cart">3</h1>

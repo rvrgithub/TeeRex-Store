@@ -1,0 +1,49 @@
+.nav_container {
+  width: 100%;
+  background-color: rgb(180, 180, 248);
+  height: 50px;
+  padding: 10px 0;
+  position: fixed;
+  display: flex;
+  color: rgb(63, 9, 113);
+  justify-content: space-around;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.pages {
+  font-size: 25px;
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  margin: 5px;
+}
+.link:hover {
+  color: rgb(26, 27, 27);
+  border-bottom: 1px solid black;
+}
+.link {
+  text-decoration: none;
+  margin-left: 10px;
+  display: flex;
+}
+.link:nth-child(2) {
+  background-color: #c8bad3c5;
+  padding: 5px;
+  border-radius: 5px;
+}
+.cart {
+  font-size: 15px;
+  margin: -5px 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .link:nth-child(1) {
+    display: none;
+  }
+}

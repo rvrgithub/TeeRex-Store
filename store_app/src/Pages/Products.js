@@ -1,14 +1,16 @@
 import React, { useContext } from "react";
 import { Card } from "../Components/Card";
-import { AppContext, useCustumHookContext } from "../Context/Store";
+import { useCustumHookContext } from "../Context/Store";
 import { Search } from "./Search";
 import "../Styles/products.css";
 import { Filter } from "../Components/Filter";
+import { useFiltrCustomHooks } from "../Context/FilterContext";
 export const Products = () => {
   // const {name} = useContext(AppContext);
   const { isLoading, storeData } = useCustumHookContext();
-
-  console.log("storeData", storeData);
+  const { filter_data } = useFiltrCustomHooks();
+  // console.log("filter data from search",filter_data );
+  // console.log("storeData", storeData);
   return (
     <div className="productContainer">
       <div className="leftSideContainer">
@@ -25,7 +27,7 @@ export const Products = () => {
           />
         ) : (
           <div className="dataContainer">
-            {storeData?.map((el) => (
+            {filter_data?.map((el) => (
               <Card key={el.id} data={el} />
             ))}
           </div>

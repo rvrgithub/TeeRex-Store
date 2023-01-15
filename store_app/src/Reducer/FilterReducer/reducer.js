@@ -9,7 +9,7 @@ export const filterReducer = (state, action) => {
       };
 
     case types.UPDATE_FILTER_VALUE:
-      const { name, value } = action.payload;
+      const { name, value} = action.payload;
       return {
         ...state,
         filters: {
@@ -21,18 +21,24 @@ export const filterReducer = (state, action) => {
     case types.FITLER_STORE_DATA:
       let { all_data } = state;
       let temp_filter_data = [...all_data];
-      console.log("storeData reducer" ,temp_filter_data)
+      // console.log("storeData reducer" ,temp_filter_data)
       const { text } = state.filters;
       if (text) {
         temp_filter_data = temp_filter_data.filter((el) => {
-          return el.name.toLowerCase().includes(text);
+          return (
+            el.name.toLowerCase().includes(text) ||
+            el.type.toLowerCase().includes(text) ||
+            el.color.toLowerCase().includes(text) ||
+            el.price.toString().includes(text)
+          );
         });
       }
-      console.log("storeData upate", temp_filter_data);
+      // console.log("storeData upate", temp_filter_data);
       return {
         ...state,
         filter_data: temp_filter_data,
       };
+
 
     default:
       return state;

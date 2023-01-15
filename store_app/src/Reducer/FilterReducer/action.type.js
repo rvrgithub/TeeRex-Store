@@ -2,3 +2,6 @@ export const LOAD_FILTER_DATA = "LOAD_FILTER_DATA";
 export const GET_SORT_VALUE = "GET_SORT_VALUE"
 export const UPDATE_FILTER_VALUE="UPDATE_FILTER_VALUE"
 export const FITLER_STORE_DATA = "FITLER_STORE_DATA";
+
+// checkbox filter ..........
+export const UPDATE_CHECK_VALUE = "UPDATE_CHECK_VALUE"

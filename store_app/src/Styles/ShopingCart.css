@@ -1,0 +1,76 @@
+.cartContainer {
+  justify-content: space-between;
+  position: absolute;
+  width: 60%;
+  text-align: center;
+  z-index: -10;
+  margin: 72px auto;
+  text-align: center;
+  left: 10%;
+}
+
+/* shoping Cart Style */
+.cartBox {
+  display: flex;
+  height: 50px;
+  border: 1px solid rgb(224, 218, 218);
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+}
+.items{
+  display: flex;
+}
+.cart_name{
+  margin:14px 5px;
+}
+.cart_image {
+  width: 80px;
+}
+.cartBox_delete_button {
+  width: 170px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+
+/* Add to amount style....... */
+.amountContainer{
+  width: 100px;
+  height: 40px;
+display: flex;
+justify-content: space-between;
+font-size: 20px;
+margin: 0 20px;
+}
+.amountContainer p{
+  margin-top: 10px;
+}
+.amountContainer button{
+  width:fit-content ;
+  height: fit-content;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .cartContainer {
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: -10;
+    font-size: 15px;
+    margin: 72px auto;
+    text-align: center;
+    left: 0;
+  }
+  .cartBox_delete_button {
+    width: 100px;
+    height: 40px;
+    margin-top: 5px;
+  }
+  
+}

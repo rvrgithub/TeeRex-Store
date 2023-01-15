@@ -1,11 +1,17 @@
-/* .filterComponent{
-    width: 20%;
+.filterComponent{
+    width: 15%;
     height: 80vh;
-    border: 2px solid red;
     position: fixed;
-    margin-top: 50px;
-} */
+    margin-top: 10px;
+    text-align: left;
+    padding: 0 50px;
+    border-right: 1px solid rgb(224, 223, 223);
+}
 .flex{
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
+}
+.flex input{
+    margin: 10px;
 }
